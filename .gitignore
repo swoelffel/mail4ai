@@ -1,3 +1,11 @@
 .DS_Store
 .agentmail-doc/
 .agentmail-docs/
+
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+npm-debug.log*
