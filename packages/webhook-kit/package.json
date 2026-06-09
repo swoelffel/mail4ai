@@ -1,6 +1,6 @@
 {
   "name": "@mail4ai/webhook-kit",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Webhook verification helpers for Mail4AI agent notifications.",
   "license": "MIT",
   "type": "module",
