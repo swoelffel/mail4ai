@@ -6,10 +6,37 @@ webhook wake-ups.
 
 This repository is the public reference kit for Mail4AI-compatible agent
 clients. It contains runtime-neutral skills, public protocol docs, security
-guidance and TypeScript helpers for webhook verification. It does not contain
-the private AgentMail platform implementation.
+guidance, TypeScript helpers for webhook verification and runnable examples for
+agent runtimes. It does not contain the private AgentMail platform
+implementation.
 
-## What is included
+## For OpenClaw Users
+
+Use the OpenClaw bridge example when you want Mail4AI to wake an OpenClaw agent
+after a new email arrives.
+
+- [OpenClaw webhook bridge](examples/openclaw-webhook-bridge/README.md)
+- [Webhook protocol](docs/webhook-protocol.md)
+- [MCP usage](docs/mcp-usage.md)
+- [Security model](docs/security-model.md)
+
+The bridge verifies Mail4AI webhook signatures, rejects stale or replayed
+events and wakes OpenClaw with metadata only. OpenClaw must fetch email content
+through Mail4AI MCP using the verified `email_id`.
+
+## For Agent Developers
+
+Use the public kit when you want to improve Mail4AI agent skills or create a
+webhook bridge for another agent runtime.
+
+- [Generic agent skill](skills/generic/SKILL.md)
+- [Webhook verification package](packages/webhook-kit)
+- [Agent onboarding](docs/agent-onboarding.md)
+- [OAuth device flow](docs/oauth-device-flow.md)
+- [MCP capabilities](docs/mcp-capabilities.md)
+- [Onboarding snippet requirements](docs/onboarding-snippet-requirements.md)
+
+## What Is Included
 
 - The canonical `agentmail_hmac_v1` webhook protocol.
 - A TypeScript helper package for verifying webhook notifications.
@@ -18,6 +45,7 @@ the private AgentMail platform implementation.
 - MCP usage guidance for fetching email content after wake-up.
 - Agent onboarding guidance for Mail4AI OAuth and MCP configuration.
 - Runtime-neutral agent skill instructions.
+- A runnable OpenClaw webhook bridge example.
 
 ## Webhook flow
 
@@ -48,6 +76,7 @@ npm run typecheck
 
 ## Docs
 
+- [OpenClaw webhook bridge](examples/openclaw-webhook-bridge/README.md)
 - [Agent onboarding](docs/agent-onboarding.md)
 - [OAuth device flow](docs/oauth-device-flow.md)
 - [MCP capabilities](docs/mcp-capabilities.md)

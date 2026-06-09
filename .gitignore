@@ -1,6 +1,7 @@
 .DS_Store
 .agentmail-doc/
 .agentmail-docs/
+.project-archive/
 
 node_modules/
 dist/
