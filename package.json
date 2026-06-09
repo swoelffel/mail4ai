@@ -1,0 +1,14 @@
+{
+  "name": "mail4ai",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public integration kit for Mail4AI agent mailboxes.",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "npm run test --workspace @mail4ai/webhook-kit",
+    "typecheck": "npm run typecheck --workspace @mail4ai/webhook-kit"
+  }
+}
