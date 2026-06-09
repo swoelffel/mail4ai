@@ -1,6 +1,6 @@
 {
   "name": "mail4ai",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "Public integration kit for Mail4AI agent mailboxes.",
   "license": "MIT",

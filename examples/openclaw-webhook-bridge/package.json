@@ -1,6 +1,6 @@
 {
   "name": "@mail4ai/openclaw-webhook-bridge",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "OpenClaw webhook bridge example for Mail4AI email.received notifications.",
   "type": "module",
@@ -15,7 +15,7 @@
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
-    "@mail4ai/webhook-kit": "0.3.0",
+    "@mail4ai/webhook-kit": "0.4.0",
     "fastify": "^5.8.5"
   },
   "devDependencies": {
