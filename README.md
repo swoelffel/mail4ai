@@ -89,6 +89,9 @@ See [use cases](docs/use-cases.md) for more detail.
 Use the OpenClaw bridge when you want Mail4ai to wake an OpenClaw agent after a
 new email arrives.
 
+Create or configure your agent mailbox from the [Mail4ai app](https://app.mail4ai.eu),
+then run the public agent kit locally:
+
 ```sh
 npm install
 npm run test
